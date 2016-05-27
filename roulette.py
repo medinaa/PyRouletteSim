@@ -54,7 +54,7 @@ class Roulette(object):
 
         keep_going = True
         while keep_going:
-            user_input = raw_input("pick some gameboard numbers and price your bets(space separated)$")
+            user_input = raw_input("pick gameboard numbers and price your bets(space separated)<number:number>$")
             regex_pattern = r'[0-9]+:[0-9]+'
             bets = re.findall(regex_pattern, user_input)
 
