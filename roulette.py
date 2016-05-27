@@ -44,7 +44,6 @@ class Roulette(object):
         return 0
 
 
-    #TODO: code review this method
     def place_bet_and_value(self):
         """
         prompt user to place their bets and value them.
@@ -55,7 +54,6 @@ class Roulette(object):
 
         keep_going = True
         while keep_going:
-            # TODO: consider making user input a separate class(after POC)
             user_input = raw_input("pick some gameboard numbers and price your bets(space separated)$")
             regex_pattern = r'[0-9]+:[0-9]+'
             bets = re.findall(regex_pattern, user_input)
